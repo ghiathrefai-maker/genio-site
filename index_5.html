@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genio Advisory — Consequential decisions, seen through</title>
+<meta name="description" content="Genio Advisory works with owners of private companies across the GCC — corporate finance, strategy &amp; AI, and selective ventures. Dubai-based, client-side only.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Genio Advisory — Consequential decisions, seen through">
+<meta property="og:description" content="Corporate finance, strategy &amp; AI, and selective ventures for owners of private companies across the GCC. Dubai-based, client-side only.">
+<meta property="og:url" content="https://genioadvisory.com/">
+<meta property="og:image" content="https://genioadvisory.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://genioadvisory.com/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 108 108'%3E%3Crect width='108' height='108' rx='22' fill='%2316243B'/%3E%3Cg transform='translate(20,20) scale(0.78)'%3E%3Cpath d='M0 0 H50 L14 88 H0 Z' fill='%23FFFFFF'/%3E%3Cpath d='M60 0 H72 L36 88 H24 Z' fill='%231E5FCB'/%3E%3Cpath d='M82 0 H88 V88 H46 Z' fill='%23FFFFFF'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16243B; --ink-deep:#0F1A2C; --ink2:#33445E;
+    --sapphire:#1E5FCB; --sapphire-dk:#1A3E8F; --sapphire-lt:#E4ECFA;
+    --paper:#FAFAFB; --hair:#E5E7EB; --band:#F3F4F6; --mute:#6B7280;
+    --white:#FFFFFF; --hero-sub:#9FB2C8; --hero-body:#C7D2E2;
+    --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+    --sans:'Lato',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+
+  /* ---------- Sticky nav ---------- */
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(15,26,44,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.07)}
+  .nav-in{max-width:1120px;margin:0 auto;padding:0 28px;height:64px;display:flex;align-items:center;justify-content:space-between}
+  .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .logo svg{display:block}
+  .logo .word{font-family:var(--sans);font-size:12.5px;font-weight:900;letter-spacing:.32em;text-transform:uppercase;color:#fff}
+  .nav-links{display:flex;gap:34px;align-items:center}
+  .nav-links a{font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--hero-sub);text-decoration:none;transition:color .2s}
+  .nav-links a:hover{color:#fff}
+  .nav-links a.cta{color:#fff;background:var(--sapphire);padding:9px 18px;border-radius:6px;letter-spacing:.1em;transition:background .2s;white-space:nowrap}
+  @media (max-width:760px){.nav-links a.cta{padding:8px 14px;font-size:11.5px}.logo .word{letter-spacing:.22em;font-size:11.5px}}
+  .nav-links a.cta:hover{background:#2a6fdd}
+  @media (max-width:760px){.nav-links a:not(.cta){display:none}}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;min-height:96vh;display:flex;align-items:center;color:var(--white);overflow:hidden;
+    background:radial-gradient(120% 90% at 78% 8%, #24406B 0%, var(--ink) 46%, var(--ink-deep) 100%)}
+  .hero::before{content:"";position:absolute;inset:0;
+    background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+    background-size:72px 72px;mask-image:radial-gradient(80% 70% at 70% 20%,#000 0%,transparent 75%);-webkit-mask-image:radial-gradient(80% 70% at 70% 20%,#000 0%,transparent 75%)}
+  .hero::after{content:"";position:absolute;right:-180px;top:-180px;width:560px;height:560px;border-radius:50%;border:1px solid rgba(30,95,203,.35)}
+  .hero .ring2{position:absolute;right:-80px;top:-80px;width:360px;height:360px;border-radius:50%;border:1px solid rgba(30,95,203,.22)}
+  .hero .wrap{position:relative;z-index:2;padding-top:120px;padding-bottom:96px}
+  .hero .tick{width:52px;height:5px;background:var(--sapphire);margin-bottom:30px}
+  .kicker{font-size:12.5px;font-weight:700;letter-spacing:.4em;text-transform:uppercase;color:var(--hero-sub);margin-bottom:22px}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,6.6vw,78px);line-height:1.06;letter-spacing:-.015em;max-width:13.5em}
+  .hero h1 em{font-style:normal;color:#7FA6E8}
+  .hero p.lede{margin-top:30px;max-width:41em;font-size:clamp(15.5px,1.9vw,18.5px);font-weight:300;color:var(--hero-body);line-height:1.75}
+  .hero p.lede strong{color:var(--white);font-weight:700}
+  .hero .actions{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap}
+  .btn{display:inline-block;font-family:var(--sans);font-size:13.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:15px 30px;border-radius:6px;transition:all .2s}
+  .btn.primary{background:var(--sapphire);color:#fff}
+  .btn.primary:hover{background:#2a6fdd;transform:translateY(-1px)}
+  .btn.ghost{color:#fff;border:1px solid rgba(255,255,255,.28)}
+  .btn.ghost:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+
+  /* ---------- Stat band ---------- */
+  .stats{background:var(--ink-deep);border-top:1px solid rgba(255,255,255,.07);color:#fff;padding:0}
+  .stats .grid{display:grid;grid-template-columns:repeat(4,1fr)}
+  .stat{padding:34px 26px;border-left:1px solid rgba(255,255,255,.07)}
+  .stat:first-child{border-left:none}
+  .stat .v{font-family:var(--serif);font-size:clamp(22px,2.6vw,30px);font-weight:600;color:#fff}
+  .stat .l{margin-top:6px;font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--hero-sub)}
+  @media (max-width:860px){.stats .grid{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:none}}
+
+  /* ---------- Section scaffolding ---------- */
+  section.pad{padding:104px 0}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--sapphire);margin-bottom:14px}
+  h2{font-family:var(--serif);font-weight:600;font-size:clamp(28px,3.6vw,42px);line-height:1.15;letter-spacing:-.01em;margin-bottom:14px}
+  .sub{color:var(--ink2);max-width:44em;font-size:16.5px;margin-bottom:52px}
+
+  /* ---------- Practice cards ---------- */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .card{position:relative;background:var(--white);border:1px solid var(--hair);border-radius:14px;padding:36px 30px 32px;box-shadow:0 1px 3px rgba(22,36,59,.05);transition:transform .25s,box-shadow .25s;overflow:hidden}
+  .card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--sapphire),#7FA6E8);opacity:0;transition:opacity .25s}
+  .card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(22,36,59,.13)}
+  .card:hover::before{opacity:1}
+  .card .num{font-family:var(--serif);font-size:15px;font-weight:600;color:var(--sapphire);letter-spacing:.08em;margin-bottom:20px}
+  .card .num::after{content:"";display:block;width:28px;height:2px;background:var(--sapphire-lt);margin-top:10px}
+  .card h3{font-family:var(--serif);font-size:23px;font-weight:600;color:var(--ink);margin-bottom:14px;line-height:1.25}
+  .card p{font-size:15px;color:var(--ink2);line-height:1.7}
+  @media (max-width:900px){.cards{grid-template-columns:1fr}}
+
+  /* ---------- How we work ---------- */
+  .principles{background:linear-gradient(180deg,var(--band) 0%,var(--paper) 100%)}
+  .plist{display:grid;grid-template-columns:1fr 1fr;gap:22px 26px}
+  .pitem{background:var(--white);border:1px solid var(--hair);border-left:4px solid var(--sapphire);border-radius:10px;padding:26px 28px;transition:transform .25s,box-shadow .25s}
+  .pitem:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(22,36,59,.10)}
+  .pitem h4{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--ink);margin-bottom:8px}
+  .pitem p{font-size:14.5px;color:var(--ink2);line-height:1.65}
+  .discretion{margin-top:44px;padding:26px 30px;background:var(--ink);border-radius:12px;color:var(--hero-body)}
+  .discretion p{font-family:var(--serif);font-size:17px;line-height:1.65;font-style:italic;max-width:56em}
+  .discretion p strong{color:#fff;font-style:normal}
+  @media (max-width:860px){.plist{grid-template-columns:1fr}}
+
+  /* ---------- Contact ---------- */
+  .contact{position:relative;background:radial-gradient(110% 100% at 22% 100%, #24406B 0%, var(--ink) 52%, var(--ink-deep) 100%);color:#fff;overflow:hidden}
+  .contact::before{content:"";position:absolute;left:-140px;bottom:-200px;width:480px;height:480px;border-radius:50%;border:1px solid rgba(30,95,203,.3)}
+  .contact .wrap{position:relative;z-index:2}
+  .contact .tick{width:52px;height:5px;background:var(--sapphire);margin-bottom:28px}
+  .contact h2{color:#fff;max-width:14em}
+  .contact p.sub{color:var(--hero-body);margin-bottom:38px}
+  .contact .loc{margin-top:26px;font-size:13.5px;letter-spacing:.06em;color:var(--hero-sub)}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink-deep);border-top:1px solid rgba(255,255,255,.07);padding:34px 0 44px}
+  footer .frow{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start}
+  footer .fbrand{font-size:11.5px;font-weight:900;letter-spacing:.32em;text-transform:uppercase;color:var(--hero-sub);white-space:nowrap;padding-top:2px}
+  footer p{font-size:12px;color:#7E93AE;line-height:1.75;max-width:56em}
+
+  /* ---------- Hero entrance ---------- */
+  .he{opacity:0;transform:translateY(18px);animation:heIn .8s ease forwards}
+  .he.h1{animation-delay:.05s}.he.h2{animation-delay:.2s}.he.h3{animation-delay:.38s}.he.h4{animation-delay:.55s}
+  @keyframes heIn{to{opacity:1;transform:none}}
+  .scrollcue{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:3;opacity:0;animation:heIn .8s ease .9s forwards}
+  .scrollcue span{display:block;width:22px;height:34px;border:2px solid rgba(255,255,255,.35);border-radius:12px;position:relative}
+  .scrollcue span::after{content:"";position:absolute;left:50%;top:7px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--sapphire);animation:cueDrop 1.8s ease-in-out infinite}
+  @keyframes cueDrop{0%,100%{transform:translateY(0);opacity:1}55%{transform:translateY(10px);opacity:.2}70%{opacity:0}85%{opacity:1}}
+  @media (prefers-reduced-motion:reduce){.he,.scrollcue{opacity:1;transform:none;animation:none}.scrollcue span::after{animation:none}}
+
+  /* ---------- Moments ---------- */
+  .moments{background:var(--white)}
+  .mlist{display:grid;grid-template-columns:1fr 1fr;gap:0 56px;border-top:1px solid var(--hair)}
+  .mitem{display:flex;gap:20px;align-items:baseline;padding:26px 4px;border-bottom:1px solid var(--hair)}
+  .mitem .mn{font-family:var(--serif);font-size:15px;font-weight:600;color:var(--sapphire);min-width:30px}
+  .mitem .mt{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--ink);line-height:1.35}
+  .mitem .mt small{display:block;font-family:var(--sans);font-size:13.5px;font-weight:400;color:var(--ink2);margin-top:5px;line-height:1.6}
+  .mclose{margin-top:38px;font-family:var(--serif);font-style:italic;font-size:18px;color:var(--ink2)}
+  .mclose strong{color:var(--ink);font-style:normal}
+  @media (max-width:860px){.mlist{grid-template-columns:1fr}}
+
+  /* ---------- Reveal on scroll ---------- */
+  .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .rv.on{opacity:1;transform:none}
+  .rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+  @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+  @media (max-width:760px){
+    section.pad{padding:72px 0}
+    .hero{min-height:88vh}
+    .hero .wrap{padding-top:110px;padding-bottom:72px}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#top" aria-label="Genio Advisory">
+      <svg width="26" height="26" viewBox="0 0 88 88" aria-hidden="true"><path d="M0 0 H50 L14 88 H0 Z" fill="#FFFFFF"/><path d="M60 0 H72 L36 88 H24 Z" fill="#1E5FCB"/><path d="M82 0 H88 V88 H46 Z" fill="#FFFFFF"/></svg>
+      <span class="word">Genio&nbsp;Advisory</span>
+    </a>
+    <div class="nav-links">
+      <a href="#practices">What we do</a>
+      <a href="#how-we-work">How we work</a>
+      <a class="cta" href="mailto:info@genioadvisory.com">Get in touch</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="ring2"></div>
+  <div class="wrap">
+    <div class="tick he h1"></div>
+    <div class="kicker he h1">Genio Advisory &middot; Dubai</div>
+    <h1 class="he h2">Consequential decisions, <em>seen&nbsp;through.</em></h1>
+    <p class="lede he h3">Genio works with owners and families who hold private companies across the GCC — businesses too significant for a generalist advisor, and never a priority for the large banks. The same owner who asks us to sharpen strategy is often the one who later needs to refinance, acquire, sell, or raise.</p>
+    <p class="lede he h3" style="margin-top:14px"><strong>Genio stays across all of it — end to end, from the decision to the signing.</strong></p>
+    <div class="actions he h4">
+      <a class="btn primary" href="mailto:info@genioadvisory.com">Start the conversation</a>
+      <a class="btn ghost" href="#practices">What we do</a>
+    </div>
+  </div>
+  <div class="scrollcue" aria-hidden="true"><span></span></div>
+</header>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="grid">
+      <div class="stat rv"><div class="v" data-count="5" data-pre="US$" data-post="bn+">US$5bn+</div><div class="l">Transactions executed</div></div>
+      <div class="stat rv d1"><div class="v" data-count="25" data-pre="" data-post=" years">25 years</div><div class="l">Building Gulf businesses</div></div>
+      <div class="stat rv d2"><div class="v">Two markets</div><div class="l">The Saudi&ndash;UAE corridor</div></div>
+      <div class="stat rv d3"><div class="v">Senior-led</div><div class="l">Every mandate, personally</div></div>
+    </div>
+  </div>
+</div>
+
+<section class="pad" id="practices">
+  <div class="wrap">
+    <div class="eyebrow rv">What we do</div>
+    <h2 class="rv">Three practices, one principal.</h2>
+    <p class="sub rv">Deliberately senior-only: every mandate is led personally by the principal, with a vetted execution bench behind it.</p>
+    <div class="cards">
+      <div class="card rv">
+        <div class="num">01</div>
+        <h3>Corporate Finance</h3>
+        <p>M&amp;A mandates for privately held companies, and debt arrangement &amp; refinancing — strictly on the client's side; nothing from lenders. Mandates typically up to ~US$300m.</p>
+      </div>
+      <div class="card rv d1">
+        <div class="num">02</div>
+        <h3>Strategy &amp; AI Advisory</h3>
+        <p>Strategy development and AI implementation programmes — senior-led, from roadmap through delivery oversight. Led by a principal who has built AI systems in his own right.</p>
+      </div>
+      <div class="card rv d2">
+        <div class="num">03</div>
+        <h3>Ventures</h3>
+        <p>Selective incubation of opportunities alongside private investors, structured deal by deal. Investors participate directly and make their own decisions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad moments" id="moments">
+  <div class="wrap">
+    <div class="eyebrow rv">When owners call</div>
+    <h2 class="rv">The moments that matter.</h2>
+    <p class="sub rv">You do not need an advisor every day. These are the moments where one pays for itself.</p>
+    <div class="mlist">
+      <div class="mitem rv"><span class="mn">01</span><div class="mt">Selling the company — or acquiring one.<small>Positioning, valuation, negotiation and execution, on your side of the table only.</small></div></div>
+      <div class="mitem rv d1"><span class="mn">02</span><div class="mt">Refinancing before it becomes urgent.<small>Debt renegotiated from strength, while there is still time to create options.</small></div></div>
+      <div class="mitem rv"><span class="mn">03</span><div class="mt">Raising capital on the right terms.<small>Preparing the business, the numbers and the story before investors see any of it.</small></div></div>
+      <div class="mitem rv d1"><span class="mn">04</span><div class="mt">A strategy that must survive contact.<small>Sharpened before a major commitment — expansion, succession, restructuring.</small></div></div>
+      <div class="mitem rv"><span class="mn">05</span><div class="mt">Taking AI seriously — beyond experiments.<small>A roadmap and delivery oversight from a principal who builds these systems himself.</small></div></div>
+      <div class="mitem rv d1"><span class="mn">06</span><div class="mt">Structuring a venture alongside investors.<small>Deal-by-deal, investors direct, with the structure earning its complexity.</small></div></div>
+    </div>
+    <p class="mclose rv"><strong>An owner facing a consequential decision</strong> — that is the call.</p>
+  </div>
+</section>
+
+<section class="pad principles" id="how-we-work">
+  <div class="wrap">
+    <div class="eyebrow rv">How we work</div>
+    <h2 class="rv">Aligned, client-side, and personally accountable.</h2>
+    <p class="sub rv">The rules below are not marketing — they are the operating constraints of the firm.</p>
+    <div class="plist">
+      <div class="pitem rv">
+        <h4>Client-side only</h4>
+        <p>We act for the owner, never the lender or the buyer. No commissions from banks, no placement fees, no product to push.</p>
+      </div>
+      <div class="pitem rv d1">
+        <h4>We never hold funds</h4>
+        <p>Money moves directly between principals. Genio advises, structures and negotiates — it never holds or handles client funds.</p>
+      </div>
+      <div class="pitem rv d2">
+        <h4>Senior-led, every time</h4>
+        <p>Every mandate is run personally by the principal, mobilizing the bench each deal needs — legal, modelling, sector operators.</p>
+      </div>
+      <div class="pitem rv d3">
+        <h4>Both sides of the corridor</h4>
+        <p>Dubai-based, licensed UAE free zone company, with two decades of execution on both sides of the Saudi&ndash;UAE corridor.</p>
+      </div>
+    </div>
+    <div class="discretion rv">
+      <p><strong>Clients are never named</strong> — in our materials or our conversations. And clients introduced to Genio always remain free to choose their own advisors and providers.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pad contact" id="contact">
+  <div class="wrap">
+    <div class="tick rv"></div>
+    <h2 class="rv">The conversation is the next step.</h2>
+    <p class="sub rv">A few lines on the situation is enough — the rest belongs in conversation.</p>
+    <div class="actions rv d1">
+      <a class="btn primary" href="mailto:info@genioadvisory.com">info@genioadvisory.com</a>
+    </div>
+    <p class="loc rv d2">Meydan Free Zone &middot; Dubai &middot; United Arab Emirates</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="frow">
+      <div class="fbrand">Genio&nbsp;Advisory</div>
+      <p>Genio Advisory is the trading style of Genio Consulting Services L.L.C-FZ, licensed in Meydan Free Zone, Dubai, United Arab Emirates. Genio Consulting Services L.L.C-FZ provides strategic and management advisory services; it does not provide regulated financial services, does not manage or pool investor money, and does not hold client funds. &copy; 2026 Genio Consulting Services L.L.C-FZ. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var counters=document.querySelectorAll('[data-count]');
+    function runCount(el){
+      var target=parseFloat(el.getAttribute('data-count')), pre=el.getAttribute('data-pre')||'', post=el.getAttribute('data-post')||'';
+      if(reduced){el.textContent=pre+target+post;return}
+      var t0=null, dur=900;
+      function step(ts){ if(!t0)t0=ts; var p=Math.min((ts-t0)/dur,1); var eased=1-Math.pow(1-p,3);
+        el.textContent=pre+Math.round(target*eased)+post; if(p<1)requestAnimationFrame(step); }
+      requestAnimationFrame(step);
+    }
+    if('IntersectionObserver' in window){
+      var cio=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){runCount(en.target);cio.unobserve(en.target)}})},{threshold:.6});
+      counters.forEach(function(c){cio.observe(c)});
+    } else { counters.forEach(runCount); }
+    var els=document.querySelectorAll('.rv');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});return}
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('on'); io.unobserve(en.target);} });
+    },{threshold:.12});
+    els.forEach(function(e){io.observe(e)});
+  })();
+</script>
+
+</body>
+</html>
